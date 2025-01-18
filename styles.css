@@ -8,7 +8,7 @@
 :root {
   --primary-color: #3498db;
   --yellow-color: #ffcc56;
-  --shadow-color: 0px 0px 4px 0px rgb(56, 56, 56);
+  --shadow-color: 0px 0px 10px 0px rgb(187, 187, 187);
   --font-size: 16px;
 }
 body {
@@ -38,9 +38,13 @@ body {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   box-sizing: border-box;
 }
+
+
+
+/* hotel section */
 .about-hotel {
   position: relative;
   width: 100%;
@@ -82,7 +86,6 @@ body {
   padding: 0 10px 0 5px;
 }
 .hotel-time p {
-  font-size: 1.2rem;
   font-weight: 700;
 }
 .hotel-time p span {
@@ -95,7 +98,7 @@ body {
 }
 .card-head {
   padding-bottom: 8px;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .card-top-right {
   display: flex;
@@ -157,7 +160,7 @@ body {
 .offer-mid {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   font-family: "Outfit", serif;
 }
 .offer-img2 {
@@ -172,35 +175,45 @@ body {
 }
 .offer-mid > :nth-child(3) {
   font-weight: 600;
+  font-size: 1rem;
 }
 @media (max-width: 650px) {
+  .offer-sec{
+    height: 90px;
+    margin-top: 10px;
+  }
   .offer-mid > :nth-child(2) {
     font-weight: 600;
     font-size: 1rem;
   }
   .offer-img2 {
-    width: 140px;
+    width: 120px;
   }
   .offer-img1 {
     width: 50px;
   }
   .offer-l-img {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     left: 0px;
   }
   .offer-mid {
-    padding-left: 50px;
+    padding-left: 30px;
   }
   .offer-r-img {
     bottom: 10;
     right: 5%;
     position: absolute;
   }
+  .offer-mid > :nth-child(1) {
+
+    font-size: 0.7rem;
+  }
   .offer-mid > :nth-child(2) {
     /* font-weight: 700; */
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
+  
 }
 
 /* Subscription Section */
@@ -208,8 +221,8 @@ body {
 .subscript {
   width: 100%;
   border-radius: 30px;
-  /* box-shadow: var(--shadow-color); */
-  border: 1px solid gray;
+  box-shadow: var(--shadow-color);
+  border: 1px solid rgb(216, 216, 216);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -238,14 +251,15 @@ body {
 /* Req Custom */
 
 .req-custom {
+  box-shadow: var(--shadow-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 15px 20px;
-  max-width: 350px;
+  /* gap: 10px; */
+  padding: 12px 17px;
+  max-width: 250px;
   border-radius: 10px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   border: 2px solid var(--yellow-color);
   cursor: pointer;
@@ -291,8 +305,20 @@ body {
 
 .menu-content h3 {
   font-weight: 600;
-  font-size: 1.5rem;
-  color: #4e4e4e;
+  font-size: 1rem;
+  color: #3c3c3c;
+}
+.menu-content :nth-child(2) {
+
+  font-size: 0.8rem;
+  color: gray;
+
+}
+.menu-content :nth-child(3) {
+
+  font-size: 0.6rem;
+  color: gray;
+
 }
 
 .contity {
@@ -340,7 +366,7 @@ body {
   .menu-card {
     display: flex;
   }
-
+ 
   .menu-r {
     flex-direction: row;
     justify-content: space-between;
@@ -351,6 +377,7 @@ body {
     width: 175px;
     height: 150px;
   }
+
 }
 
 @media (min-width: 1024px) {
@@ -361,6 +388,7 @@ body {
   .rate {
     font-size: 1.3rem;
   }
+ 
 }
 
 /* Ratting section */
@@ -368,14 +396,13 @@ body {
 .ratting-sec {
   position: fixed;
   display: flex;
+  z-index: 999;
   justify-content: center;
   align-items: center;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 22vh;
+  bottom: 130px;
   width: 600px;
-
-  padding: 5px;
   /* height: 120px; */
   box-sizing: border-box;
   background-color: var(--yellow-color);
@@ -396,7 +423,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: white;
-  padding: 5px 30px;
+  padding: 0px 30px;
   border-radius: 50px;
 }
 .ratting-r:hover {
@@ -407,24 +434,25 @@ body {
 }
 .ratting-l {
   width: 300px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-left: 30px;
   font-weight: 600;
   color: #2e3442;
 }
 .ratting-l span {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  padding-left: 10px;
+  padding-left: 2px;
 }
 
 /* Footer top menu */
 
 .option {
+  z-index: 999;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 8vh;
+  bottom: 40px;
   cursor: pointer;
 }
 .option-iner {
@@ -439,16 +467,17 @@ body {
   background-color: #ffbd24;
 }
 .option-iner img {
-  width: 30px;
-  padding: 20px;
+  width: 25px;
+  padding: 15px;
   /* background-color: var(--yellow-color); */
 }
 
 /* Footer Section */
 .footer {
   position: sticky;
-  height: 10vh;
+  height: 60px;
   bottom: 0;
+  z-index: 999;
   left: 0;
   width: 100%;
   box-sizing: border-box;
@@ -486,12 +515,10 @@ body {
 
 .nav-iner img {
   cursor: pointer;
-  width: 30px;
+  width: 20px;
   filter: invert(1);
 }
-.nav-iner img:hover {
-  width: 32px;
-}
+
 
 .curved-edge {
   --c: 100px;
@@ -504,7 +531,7 @@ body {
 }
 @media (max-width: 650px) {
   .curved-edge {
-    --c: 90px;
+    --c: 100px;
     height: 200px;
     max-width: 100px;
     aspect-ratio: 11/9;
@@ -513,7 +540,7 @@ body {
     background: #2e3442;
   }
   .ratting-sec {
-    bottom: 17vh;
+    bottom: 120px;
     width: 90%;
   }
   .offer-detail {
