@@ -235,7 +235,6 @@ body {
   cursor: pointer;
   border-radius: 30px;
   font-weight: 600;
-  transition: background-color 0.3s ease;
 }
 .sub-r {
   font-weight: 600;
@@ -245,7 +244,6 @@ body {
   padding: 20px 10px;
   width: 50%;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 .sub-r:hover {
   background-color: #f9b518;
