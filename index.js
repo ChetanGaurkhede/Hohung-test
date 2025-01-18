@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sub_l = document.querySelector(".sub-l");
   const sub_r = document.querySelector(".sub-r");
   const reqCustom = document.querySelector(".req-custom");
+  const filter_cont = document.querySelector(".filter-cont");
 
   //for subscription togle
   sub_l.onclick =()=>{
@@ -24,6 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
   //alert added
   reqCustom.onclick =()=>{
     alert("Custmization request sent")
+  }
+  filter_cont.onclick = () =>{
+    alert("Filter feature will be come soon in next update.")
   }
 
   // Update Cart Display

@@ -42,8 +42,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
 /* hotel section */
 .about-hotel {
   position: relative;
@@ -178,7 +176,7 @@ body {
   font-size: 1rem;
 }
 @media (max-width: 650px) {
-  .offer-sec{
+  .offer-sec {
     height: 90px;
     margin-top: 10px;
   }
@@ -206,14 +204,12 @@ body {
     position: absolute;
   }
   .offer-mid > :nth-child(1) {
-
     font-size: 0.7rem;
   }
   .offer-mid > :nth-child(2) {
     /* font-weight: 700; */
     font-size: 1.2rem;
   }
-  
 }
 
 /* Subscription Section */
@@ -270,6 +266,46 @@ body {
   box-shadow: 0px 0px 6px 0px var(--yellow-color);
 }
 
+/* Search box  */
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  gap: 10px;
+}
+
+.search-l {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; 
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 0px rgb(187, 187, 187);
+}
+
+.search-l input {
+  width: 100%; 
+  border: none;
+  outline: none; 
+}
+
+.filter-cont {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content; 
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 10px;
+}
+.filter-cont:hover {
+  box-shadow: var(--shadow-color);
+}
+
+
 /* Menu section */
 .menu {
   width: 100%;
@@ -311,16 +347,12 @@ body {
   color: #3c3c3c;
 }
 .menu-content :nth-child(2) {
-
   font-size: 0.8rem;
   color: gray;
-
 }
 .menu-content :nth-child(3) {
-
   font-size: 0.6rem;
   color: gray;
-
 }
 
 .contity {
@@ -337,17 +369,17 @@ body {
 .menu-img2 {
   position: relative;
 }
-.menu-img2-count{
+.menu-img2-count {
   width: 100px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
 }
-.menu-img2-count :nth-child(2){
+.menu-img2-count :nth-child(2) {
   font-size: 1.5rem;
   padding: 5px 10px;
 }
-.add-in{
+.add-in {
   font-size: 2rem;
   display: flex;
   width: 30px;
@@ -384,7 +416,7 @@ body {
   font-weight: 800;
   color: #383838;
 }
-#rate-option{
+#rate-option {
   font-size: 1.2rem;
   font-weight: 800;
   color: #383838;
@@ -395,7 +427,7 @@ body {
   .menu-card {
     display: flex;
   }
- 
+
   .menu-r {
     flex-direction: row;
     justify-content: space-between;
@@ -406,7 +438,6 @@ body {
     width: 175px;
     height: 150px;
   }
-
 }
 
 @media (min-width: 1024px) {
@@ -417,7 +448,6 @@ body {
   .rate {
     font-size: 1.3rem;
   }
- 
 }
 
 /* Ratting section */
@@ -547,7 +577,6 @@ body {
   width: 20px;
   filter: invert(1);
 }
-
 
 .curved-edge {
   --c: 100px;
